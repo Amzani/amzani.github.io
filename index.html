@@ -5,41 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="header">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#"><img data-hdpi-src="http://static1.dmcdn.net/images/header/logo@2x.png.v406dba93a3dd750a9" src="http://static1.dmcdn.net/images/header/logo.png.ve5ebb8f8167218989"></a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+      </div><!-- /.container -->
     </div>
 
-    <div class="container">
+    <div class="console">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" id="guid">
+            <h3>Got 5 minutes ?</h3>
+            <p>Type help to start the tutorial.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <div class="col-md-6 curl-console" id="cli">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 Dailymotion | Dailymotion.com · <a href="#">Developers</a> · <a href="#">API Explorer</a></p>
       </div>
-
-    </div><!-- /.container -->
+    </footer>
+    
+  
     
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.console.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/trydmapi.js"></script>
+
 </body>
 </html>
