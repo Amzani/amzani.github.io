@@ -21,12 +21,22 @@
     <div class="console">
       <div class="container">
         <div class="row">
-          <div class="col-md-6" id="guid">
-            <h3>Got 5 minutes ?</h3>
-            <p>Type help to start the tutorial.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div class="col-md-4" id="guid">
+            <h3 class="title">Got 5 minutes ?</h3><br />
+            <p>Type <code class="cmd">go</code> to start the tutorial.</p>
+            <p>Or Try typing these out and see what happens (click to insert)</code>
+            <p><code class="cmd">GET /videos</code>, 
+                <code class="cmd">GET /users</code>, 
+                <code class="cmd">GET /video/x12ptof/?fields=id,title</code>, 
+                <code class="cmd">GET /playlists</code>
+                <code class="cmd">GET /user/videos/</code>
+                <code class="cmd">GET /video/comments/</code>
+            </p>
+            <p>The Graph API is a simple way to access, publish and modify data on Dailymotion</p>
+            <p>The Graph API presents a simple, consistent view of the Dailymotion objects (e.g., <b class="cmd">users</b>, <b class="cmd">videos</b>, playlists, etc.)</i> </p> 
+            <p>You can also access to object connections them <i>(e.g., friend relationship, user’s posted videos, videos in groups/playlits, etc.)</i></p>
           </div>
-          <div class="col-md-6 curl-console" id="cli">
+          <div class="col-md-8 curl-console" id="cli">
 
           </div>
         </div>
@@ -41,7 +51,7 @@
     </footer>
     
   
-    
+    <script src="http://api.dmcdn.net/all.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery.console.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>

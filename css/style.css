@@ -1,5 +1,5 @@
 body {
-	font: 16px 'Lato', Arial,sans-serif;
+	font: 17px 'Lato', Arial,sans-serif;
 	color: #333;
 	height: 100%;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 #cli {
-	width: 570px;
+	width: auto;
 	height: 300px;
 	color:black;
 }
@@ -46,7 +46,7 @@ margin-bottom: 0.5em;
 }
 div.curl-console { font-size: 14px; margin-top:1em }
 div.curl-console div.jquery-console-inner
-{ width:auto; height:500px; background:#efefef; padding:0.5em;
+{ width:720px; height:500px; background:#efefef; padding:0.5em;
  overflow:auto }
 div.curl-console div.jquery-console-prompt-box
 { color:#444; font-family:monospace; }
@@ -59,3 +59,15 @@ div.curl-console div.jquery-console-message-success
 { color:#187718; font-family:monospace;
  padding:0.1em; }
 div.curl-console span.jquery-console-prompt-label { font-weight:bold; color: #006da1;}
+
+code {
+	padding: 2px 4px;
+	color: #d14;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	white-space: nowrap;
+}
+
+.title {
+	margin-bottom: 4px;
+}
