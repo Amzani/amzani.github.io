@@ -46,8 +46,8 @@ margin-bottom: 0.5em;
 }
 div.curl-console { font-size: 14px; margin-top:1em }
 div.curl-console div.jquery-console-inner
-{ width:720px; height:500px; background:#efefef; padding:0.5em;
- overflow:auto }
+{ width:750px; height:500px; background:#fff; padding:0.5em;
+ overflow:auto; border-left:1px solid #eee;}
 div.curl-console div.jquery-console-prompt-box
 { color:#444; font-family:monospace; }
 div.curl-console div.jquery-console-focus span.jquery-console-cursor
