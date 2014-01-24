@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="http://api.dmcdn.net/all.js"></script>
+        <script>
+            DM.init({
+                apiKey: '0b8b12488a4661bc19d2',
+                status: true, // check login status
+                cookie: true // enable cookies to allow the server to access the session
+            });
+
+            DM.login(function(response)
+            {
+                if (response.session)
+                {
+                    if (response.session.scope)
+                    {
+                        // user is logged in and granted some permissions.
+                        // perms is a comma separated list of granted permissions
+                        DM.api('/videos', {fields: "id,title,channel,created_time,embed_html,owner.username"}, function(response)
+                        {
+                            document.getElementById('apiResponse').innerHTML = JSON.stringify(response, null, 4);
+                        });
+                    }
+                    else
+                    {
+                        // user is logged in, but did not grant any permissions
+                        alert('logged without permissions');
+                    }
+                }
+                else
+                {
+                    // no user session available, someone you dont know
+                    alert('unlogged');
+                }
+            }, {scope: 'read write'});
+        </script>
+    </head>
+    <body>
+        <h1>JS API test page</h1>
+        <br /><br />
+        <p>
+            <h3>Response :</h3>
+            <br />
+            <div id="apiResponse"></div>
+        </p>
+    </body>
+</html>

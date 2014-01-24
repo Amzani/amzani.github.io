@@ -4,6 +4,7 @@ body {
 	height: 100%;
 }
 
+
 .navbar {
 	background:#006da1;
 }
@@ -43,6 +44,7 @@ footer {
 div.curl-console .jquery-console-welcome {
 color: #888;
 margin-bottom: 0.5em;
+font:'Lato';
 }
 div.curl-console { font-size: 14px; margin-top:1em }
 div.curl-console div.jquery-console-inner
@@ -53,7 +55,7 @@ div.curl-console div.jquery-console-prompt-box
 div.curl-console div.jquery-console-focus span.jquery-console-cursor
 { background:#333; color:#eee; font-weight:bold }
 div.curl-console div.jquery-console-message-error
-{ color:#ef0505; font-family:sans-serif; font-weight:bold;
+{ color:#ef0505; font-family: 'Lato', sans-serif; font-weight:bold;
  padding:0.1em; }
 div.curl-console div.jquery-console-message-success
 { color:#187718; font-family:monospace;
