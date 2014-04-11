@@ -1,0 +1,430 @@
+body 
+{
+	background-color: black;
+}
+
+
+/*-------HYPERVIDEO------*/
+
+#ryersonUniversity {
+	display:none;
+}
+
+dl {
+	 -webkit-transition-property:left;  
+	 -webkit-transition-duration: 1.4s;
+	 -webkit-transition-timing-function:ease-in-out; /* transition-property transition-duration(ms/s) transition-timing-function(ease-out/ease/linear/ease-in-out/ease-in/cubic-bezier(0.42, 0, 1.0, 1.0)/step-start/steps(3)/steps(3,start)/step-end) transition-delay(+-ms/s) */
+		transition-timing-function:ease-in-out;
+		transition-duration: 1.4s;
+		transition-property:left;
+		
+		-moz-transition-timing-function:ease-in-out;
+		-moz-transition-duration: 1.4s;
+		-moz-transition-property:left;
+		
+		-ms-transition-timing-function:ease-in-out;
+		-ms-transition-duration: 1.4s;
+		-ms-transition-property:left;
+		
+		
+		padding:10px;
+		margin:0;
+		background:#006da1;
+		left:100%;
+		position:relative;
+		
+
+}
+
+@media (max-width:900px) {
+	dl {
+		padding:4px;
+	}
+}
+
+
+
+dd {
+	margin-left:0;
+}
+.title dl dt {
+	display:none;
+}
+#cues {
+	position:absolute;
+	bottom:0;
+	left:100%;
+	width:100%;
+	z-index:100;
+	margin:0;
+	bottom:-36px;
+	margin-left:38px;
+	height:7px;
+	padding:0;
+}
+#cues li {
+	height:4px;
+	background:#F9D449;
+	display:inline-block;
+	position:absolute;
+}
+#cues li:nth-child(1) {
+	left: 4.6%;
+	width: 3%;
+}
+#cues li:nth-child(2) {
+	left: 8.75%;
+	width: 4.8%;
+}
+#cues li:nth-child(3) {
+	left: 29.5%;
+	width: 4%;
+}
+#cues li:nth-child(4) {
+	width: 3.8%;
+	left: 42.5%;
+}
+#cues li:nth-child(5) {
+	width: 10.8%;
+	left: 86.5%;
+}
+
+article#demo {
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+#container {
+	width:100%;height:100%;
+	left:-100%;top:-40px;
+	position:absolute;
+}
+#container aside{
+	width:100%;height:100%;
+	position:absolute;
+	top:0;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	transition-property: width, height,left;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	
+	-moz-transition-property: width, height,left;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	
+	-ms-transition-property: width, height,left;
+	-ms-transition-duration: 1s;
+	-ms-transition-timing-function: ease-in-out;
+
+	
+	-webkit-transition-property: width, height,left;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	
+
+	
+}
+#container aside.active {
+	z-index:2;
+}
+
+aside[itemtype="http://data-vocabulary.org/Person"] {
+	position:absolute;
+		-webkit-transform: translateX(0%);
+		   -moz-transform: translateX(0%);
+		    -ms-transform: translateX(0%);
+		     -o-transform: translateX(0%);
+		        transform: translateX(0%);
+	 -moz-transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
+	 -ms-transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
+	-moz-transition-duration: 1.4s, 1.4s, 1.4s;
+	-ms-transition-duration: 1.4s, 1.4s, 1.4s;
+	-moz-transition-property:width, height,left;
+	-ms-transition-property:width, height,left;
+				 -webkit-transition-property:width, height,left;  
+				 -webkit-transition-duration: 1.4s, 1.4s, 1.4s;
+				 -webkit-transition-timing-function:ease-in-out, ease-in-out, ease-in-out;
+				
+				
+
+		
+				
+}
+aside section {
+	position:absolute;
+	overflow:hidden;
+}
+.title h1 {
+	display:none;
+}
+.person .title {
+	color:white;
+
+	 
+	white-space:nowrap;
+	top:75%;
+	background:#f9d449;
+	width:0;
+	margin-left:0;
+	-moz-transition-property:width, height,left;  
+	-moz-transition-duration: 1.4s;
+	-moz-transition-timing-function: ease-in-out;
+	 -webkit-transition-property:width, height,left;  
+	 -webkit-transition-duration: 1.4s;
+	 -webkit-transition-timing-function:ease-in-out;
+	
+	-webkit-mask-box-image: url('http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/aside-mask.png') stretch;
+	-webkit-mask-clip: content; 
+	mask-box-image: url('http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/aside-mask.png') stretch;
+	mask-clip: content;
+
+}
+.person .title a {
+	text-decoration:none;
+}
+
+.person .title  dd[itemprop="name"] {
+	font-family: Helvetica;
+	font-size: 300%;
+	letter-spacing: -3px;
+	line-height:86%;
+	/*
+	width:10000px;
+	*/
+}
+.person .title a:hover *, .title a:hover {
+	position:relative;
+	left:-1px;
+	top:-1px;
+	text-shadow: 2px 3px 2px #083D73;
+	color:#b2daf6;
+	text-shadow: 2px 3px 2px #083D73;
+	/*
+	width:10000px;
+	*/
+}
+
+.title a:hover {
+	background: url(http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/ico/linkout-hover.png) right 0px no-repeat;
+}
+.title a.subsidiary {
+	background: url(http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/ico/linkoutSub.png) right 0px no-repeat;
+	padding-right: 7px;
+	margin-right:-5px;
+}
+.title a.subsidiary:hover {
+	background: url(http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/ico/linkoutSub-hover.png) right 0px no-repeat;
+}
+
+.title a {
+	text-decoration: none;
+	color: white;
+	background: url(http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/ico/linkout.png) right 0px no-repeat;
+	display: inline-block;
+	top: 20px;
+	padding-right: 14px;
+	text-shadow: 1px 1px 1px #083D73;
+}
+
+
+.person .title  dd[itemprop="title"], .person .organization {
+	font-family: Verdana;
+	font-size: 100%;
+	letter-spacing: -1px;
+	line-height:120%;
+	text-shadow: 1px 2px 1px #083D73;
+	margin-left:5px;
+}
+.person .title a:hover dd[itemprop="title"], .person .organization a:hover {
+	position:relative;
+	top:-1px;
+	left:-1px;
+	text-shadow: 2px 3px 2px #083D73;
+}
+.person .title dd[itemprop="title"] {
+	margin-top:2px;
+}
+
+
+
+.person .organization a {
+	font-size:90%;
+}
+
+#writeup {
+	position:absolute;
+	left:20px;
+	top:20px;
+	background:white;
+	color:black;
+}
+
+#writeup2 {
+	position:absolute;
+	left:20px;
+	top:40px;
+	background:white;
+	color:black;
+}
+
+.person.active dl {
+	left:12%;
+	height:100%;
+}
+.person dl {
+	height:100%;
+}
+.active .title {
+	width:72%;
+	height:17%;
+}
+.title {
+	height:17%;
+}
+.person .links.active {
+	height:5.5%;
+}
+.links ul {
+	width:100%;
+}
+.links ul {
+	display:inline-block;
+}
+
+.links h1 {
+	display:none;
+}
+.links ul {
+	background:#0c141c;
+	padding:3px 0px 3px 1%;
+	position:relative;
+	margin:0;
+	transition-property: height;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+	transition-delay:1.4s;
+	-webkit-transition-property: height;
+	-webkit-transition-duration: 0.8s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay:1.4s;
+	
+
+	
+	list-style:none;
+	font-family:Verdana;
+	font-size:75%;
+}
+.links li {
+	padding:0.5%;
+	color:white;
+	float:left;
+	padding:0.5% 1% 0.5% 0%;
+	list-style-type:none;
+	
+}
+.links li a {
+	color:#f3d61a;
+}
+.links li a:hover {
+	color:#b2cbff;
+}
+
+.person .links {
+	-webkit-transition-property: height,width;
+	-webkit-transition-duration: 0.8s;
+	-webkit-transition-delay:1.4s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-mask-box-image: url('http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/aside-mask.png') stretch;
+	-webkit-mask-clip: content;
+	
+	transition-property: height,width;
+	transition-duration: 0.8s;
+	transition-delay:1.4s;
+	transition-timing-function: ease-in-out;
+	
+	
+	-moz-transition-property: height,width;
+	-moz-transition-duration: 0.8s;
+	-moz-transition-delay:1.4s;
+	-moz-transition-timing-function: ease-in-out;
+	
+	
+	-ms-transition-property: height,width;
+	-ms-transition-duration: 0.8s;
+	-ms-transition-delay:1.4s;
+	-ms-transition-timing-function: ease-in-out;
+	
+	
+	mask-clip: content;
+	mask-box-image: url('http://ryersonssh500.com/wp-content/uploads/2012/06/hypervideo/img/aside-mask.png') stretch;
+	
+	
+	color: white;
+	white-space: nowrap;
+	top: 91.9%;
+	margin-left: 0;
+	height:0%;width:72%;
+	overflow:hidden;
+}
+
+#container > active {
+-webkit-transform: translateX(100%);
+   -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+        transform: translateX(100%);
+		transition-property:width, height,left; 
+		transition-duration: 1.4s;
+		transition-timing-function:ease-in-out;
+				 -webkit-transition-property:width, height,left; 
+				 -webkit-transition-duration: 1.4s;
+				 -webkit-transition-timing-function:ease-in-out;
+				
+	
+	-ms-transform: translateX(100%);
+	-ms-transition-property:width, height,left; 
+	-ms-transition-duration: 1.4s;
+	-ms-transition-timing-function:ease-in-out;			
+				
+	-moz-transform: translateX(100%);
+	-moz-transition-property:width, height,left; 
+	-moz-transition-duration: 1.4s;
+	-moz-transition-timing-function:ease-in-out;
+
+}
+#container a {
+	text-decoration:none;
+	border:none;
+	
+}
+
+#thirdlenslogo {
+	text-align: right;
+	float: right;
+	width: 300px;
+	height: auto;
+	padding-top: 10px;
+	font-size: 11px;
+	font-family: Tahoma;
+	color: 
+	#888;
+}
+#thirdlenslogo a {
+	text-decoration:none;
+	border:none;
+}
+#thirdlenslogo img {
+	float:right;
+	height:34px;
+	width:auto;
+	position:relative;
+	top:-8px;
+	margin-left:6px;
+	
+}
